@@ -49,16 +49,6 @@ public abstract class BaseEntity implements Serializable {
 	@Column(name = "UPDATED_BY", insertable = false)
 	private Long updatedBy;
 	
-	@JsonProperty("LUC")
-	@Column(name="LUC")
-	private Long luc = 0L;
-	
-	@JsonProperty("STATUS")
-	@Column(name="STATUS")
-	private int status = 1;
-
-
-	
 	protected BaseEntity (){
 		this.uuid = UUID.randomUUID();
 	}
