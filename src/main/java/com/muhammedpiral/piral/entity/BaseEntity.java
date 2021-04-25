@@ -12,22 +12,21 @@ import javax.persistence.TemporalType;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Getter;
 import lombok.Setter;
+
 @MappedSuperclass
 @Getter
 @Setter
 public abstract class BaseEntity implements Serializable {
-	
-	
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="UUID",unique = true)
+	@Column(name = "UUID", unique = true)
 	private UUID uuid;
 
 	@Column(name = "DELETED")
@@ -35,10 +34,10 @@ public abstract class BaseEntity implements Serializable {
 
 	@CreationTimestamp
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "CREATED_DATE", nullable = false,updatable = false)
+	@Column(name = "CREATED_DATE", nullable = false, updatable = false)
 	private Date createdDate;
 
-	@Column(name = "CREATED_BY",nullable = false, updatable = false)
+	@Column(name = "CREATED_BY", nullable = false, updatable = false)
 	private Long createdBy = 1L;
 
 	@UpdateTimestamp
@@ -48,8 +47,8 @@ public abstract class BaseEntity implements Serializable {
 
 	@Column(name = "UPDATED_BY", insertable = false)
 	private Long updatedBy;
-	
-	protected BaseEntity (){
+
+	protected BaseEntity() {
 		this.uuid = UUID.randomUUID();
 	}
 }
