@@ -4,11 +4,11 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import com.muhammedpiral.piral.entity.account.OrderProduct;
+import com.muhammedpiral.piral.entity.account.Order;
 
 @Service
 public interface OrderListService {
 	
-	OrderProduct saveOrderList(UUID uuid,Long[] productIds);
+	Order saveOrderList(UUID uuid,Long[] productIds);
 
 }

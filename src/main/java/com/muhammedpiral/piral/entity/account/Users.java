@@ -62,7 +62,7 @@ public class Users extends BaseEntity {
 	
 
 	@OneToMany
-	private List<OrderProduct> orderList;
+	private List<Order> orderList;
 	
 	
 	@OneToMany

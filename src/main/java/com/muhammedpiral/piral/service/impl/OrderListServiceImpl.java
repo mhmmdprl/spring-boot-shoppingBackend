@@ -7,10 +7,10 @@ import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.muhammedpiral.piral.entity.account.OrderProduct;
+import com.muhammedpiral.piral.entity.account.Order;
 import com.muhammedpiral.piral.entity.account.Users;
 import com.muhammedpiral.piral.entity.product.Product;
-import com.muhammedpiral.piral.repository.OrderListRepository;
+import com.muhammedpiral.piral.repository.OrderRepository;
 import com.muhammedpiral.piral.repository.ProductRepository;
 import com.muhammedpiral.piral.repository.UserRepository;
 import com.muhammedpiral.piral.service.OrderListService;
@@ -24,11 +24,11 @@ public class OrderListServiceImpl implements OrderListService {
 	private ProductRepository productRepository;
 
 	@Autowired
-	private OrderListRepository orderListRepo;
+	private OrderRepository orderListRepo;
 	
 	
 	@Override
-	public OrderProduct saveOrderList(UUID uuid, Long[] productIds) {
+	public Order saveOrderList(UUID uuid, Long[] productIds) {
 		Double totalPrice = 0.0;
 		Users user = this.userRepository.findByUuid(uuid);
 		List<Product> products = new ArrayList<Product>();
@@ -42,7 +42,7 @@ public class OrderListServiceImpl implements OrderListService {
 			products.add(product.get());
 		}
 
-		OrderProduct orderList = new OrderProduct();
+		Order orderList = new Order();
 
 		orderList.setProducts(products);
 		orderList.setTotalPrice(totalPrice);

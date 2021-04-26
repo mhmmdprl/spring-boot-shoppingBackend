@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import com.muhammedpiral.piral.entity.account.Basket;
 import com.muhammedpiral.piral.entity.account.Users;
 import com.muhammedpiral.piral.entity.product.Product;
-import com.muhammedpiral.piral.repository.BasketListRepository;
+import com.muhammedpiral.piral.repository.BasketRepository;
 import com.muhammedpiral.piral.repository.ProductRepository;
 import com.muhammedpiral.piral.repository.UserRepository;
 import com.muhammedpiral.piral.service.BasketListService;
@@ -20,7 +20,7 @@ import com.muhammedpiral.piral.service.BasketListService;
 public class BasketListServiceImpl implements BasketListService {
 
 	@Autowired
-	private BasketListRepository basketListRep;
+	private BasketRepository basketListRep;
 
 	@Autowired
 	private UserRepository userRepository;
