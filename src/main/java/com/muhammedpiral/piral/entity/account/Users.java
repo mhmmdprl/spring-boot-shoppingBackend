@@ -62,11 +62,11 @@ public class Users extends BaseEntity {
 	
 
 	@OneToMany
-	private List<OrderList> orderList;
+	private List<OrderProduct> orderList;
 	
 	
 	@OneToMany
-	private List<BasketList> basketList;
+	private List<Basket> basketList;
 	
 	
 

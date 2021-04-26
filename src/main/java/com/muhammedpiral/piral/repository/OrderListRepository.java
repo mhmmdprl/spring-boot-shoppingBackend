@@ -2,8 +2,8 @@ package com.muhammedpiral.piral.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.muhammedpiral.piral.entity.account.OrderList;
+import com.muhammedpiral.piral.entity.account.OrderProduct;
 
-public interface OrderListRepository extends JpaRepository<OrderList, Long> {
+public interface OrderListRepository extends JpaRepository<OrderProduct, Long> {
 
 }

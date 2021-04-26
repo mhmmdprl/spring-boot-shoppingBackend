@@ -4,7 +4,7 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import com.muhammedpiral.piral.entity.product.dto.ProductDetailDto;
+import com.muhammedpiral.piral.product.dto.ProductDetailDto;
 
 @Service
 public interface ProductDetService {

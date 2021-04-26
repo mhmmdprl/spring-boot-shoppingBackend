@@ -4,14 +4,14 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import com.muhammedpiral.piral.entity.account.BasketList;
+import com.muhammedpiral.piral.entity.account.Basket;
 
 
 @Service
 public interface BasketListService {
 
 	
-	BasketList saveBasketList(UUID uuid,Long[] productIds);
+	Basket saveBasketList(UUID uuid,Long[] productIds);
 	
 	void deleteFromBasket(Long basketId,UUID uuid);
 	

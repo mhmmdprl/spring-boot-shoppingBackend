@@ -1,4 +1,4 @@
-package com.muhammedpiral.piral.entity.account.dto;
+package com.muhammedpiral.piral.account.dto;
 
 import java.util.Date;
 import java.util.UUID;

@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.muhammedpiral.piral.entity.product.ProductDetail;
-import com.muhammedpiral.piral.entity.product.dto.ProductDetailDto;
+import com.muhammedpiral.piral.product.dto.ProductDetailDto;
 import com.muhammedpiral.piral.repository.ProductDetailRepository;
 import com.muhammedpiral.piral.repository.ProductRepository;
 import com.muhammedpiral.piral.service.ProductDetService;

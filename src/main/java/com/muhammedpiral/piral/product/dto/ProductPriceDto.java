@@ -1,4 +1,4 @@
-package com.muhammedpiral.piral.entity.product.dto;
+package com.muhammedpiral.piral.product.dto;
 
 import com.muhammedpiral.piral.entity.product.MoneyType;
 import com.muhammedpiral.piral.entity.product.ProductPrice;

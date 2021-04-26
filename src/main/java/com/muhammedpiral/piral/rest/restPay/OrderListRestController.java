@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.muhammedpiral.piral.entity.account.OrderList;
+import com.muhammedpiral.piral.entity.account.OrderProduct;
 import com.muhammedpiral.piral.service.OrderListService;
 
 @RestController
@@ -22,7 +22,7 @@ public class OrderListRestController {
 	private OrderListService orderListService;
 
 	@PostMapping("/{uuid}")
-	public ResponseEntity<OrderList> addToBasket(@PathVariable UUID uuid, @RequestParam(value = "id") Long[] id) {
+	public ResponseEntity<OrderProduct> addToBasket(@PathVariable UUID uuid, @RequestParam(value = "id") Long[] id) {
 
 		return ResponseEntity.ok(this.orderListService.saveOrderList(uuid, id));
 	}

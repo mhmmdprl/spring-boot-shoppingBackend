@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
+import com.muhammedpiral.piral.account.dto.UserDto;
 import com.muhammedpiral.piral.entity.account.Users;
-import com.muhammedpiral.piral.entity.account.dto.UserDto;
 import com.muhammedpiral.piral.repository.UserRepository;
 import com.muhammedpiral.piral.service.UserService;
 

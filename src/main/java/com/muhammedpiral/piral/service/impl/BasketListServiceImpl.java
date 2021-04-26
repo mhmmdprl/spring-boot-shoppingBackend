@@ -8,7 +8,7 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.muhammedpiral.piral.entity.account.BasketList;
+import com.muhammedpiral.piral.entity.account.Basket;
 import com.muhammedpiral.piral.entity.account.Users;
 import com.muhammedpiral.piral.entity.product.Product;
 import com.muhammedpiral.piral.repository.BasketListRepository;
@@ -29,7 +29,7 @@ public class BasketListServiceImpl implements BasketListService {
 	private ProductRepository productRepository;
 
 	@Override
-	public BasketList saveBasketList(UUID uuid, Long[] productIds) {
+	public Basket saveBasketList(UUID uuid, Long[] productIds) {
 
 		Double totalPrice = 0.0;
 		Users user = this.userRepository.findByUuid(uuid);
@@ -44,7 +44,7 @@ public class BasketListServiceImpl implements BasketListService {
 			products.add(product.get());
 		}
 
-		BasketList basketList = new BasketList();
+		Basket basketList = new Basket();
 
 		basketList.setProducts(products);
 		basketList.setTotalBasketPrice(totalPrice);

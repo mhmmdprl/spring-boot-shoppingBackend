@@ -23,7 +23,7 @@ import lombok.Setter;
 @EqualsAndHashCode(callSuper = false)
 @Entity
 @Table(name = "order")
-public class OrderList extends BaseEntity {
+public class OrderProduct extends BaseEntity {
 	
 	
 	/**

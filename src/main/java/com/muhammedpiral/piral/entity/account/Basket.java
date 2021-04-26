@@ -25,7 +25,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Entity
 @Table(name = "basket")
-public class BasketList {
+public class Basket {
 
 	
 	
