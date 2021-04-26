@@ -3,7 +3,7 @@ package com.muhammedpiral.piral.service;
 import java.util.List;
 import java.util.UUID;
 
-import com.muhammedpiral.piral.account.dto.UserDto;
+import com.muhammedpiral.piral.dto.account.UserDto;
 import com.muhammedpiral.piral.entity.account.Users;
 
 public interface UserService {

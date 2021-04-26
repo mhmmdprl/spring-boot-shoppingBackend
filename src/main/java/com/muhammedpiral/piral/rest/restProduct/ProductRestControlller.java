@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.muhammedpiral.piral.product.dto.ProductDto;
+import com.muhammedpiral.piral.dto.product.ProductDto;
 import com.muhammedpiral.piral.service.ProductService;
 
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,4 @@
-package com.muhammedpiral.piral.product.dto;
+package com.muhammedpiral.piral.dto.product;
 
 import java.util.List;
 

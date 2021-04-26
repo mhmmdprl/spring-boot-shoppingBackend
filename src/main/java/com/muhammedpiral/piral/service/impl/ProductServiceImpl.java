@@ -8,10 +8,10 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
+import com.muhammedpiral.piral.dto.product.ProductDetailDto;
+import com.muhammedpiral.piral.dto.product.ProductDto;
+import com.muhammedpiral.piral.dto.product.ProductPriceDto;
 import com.muhammedpiral.piral.entity.product.Product;
-import com.muhammedpiral.piral.product.dto.ProductDetailDto;
-import com.muhammedpiral.piral.product.dto.ProductDto;
-import com.muhammedpiral.piral.product.dto.ProductPriceDto;
 import com.muhammedpiral.piral.repository.ProductRepository;
 import com.muhammedpiral.piral.service.ProductService;
 
