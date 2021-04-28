@@ -1,1 +1,1 @@
-# starter-shopping
+# shopping
