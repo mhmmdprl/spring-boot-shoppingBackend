@@ -6,8 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.muhammedpiral.piral.entity.account.Order;
 
-@Service
-public interface OrderListService {
+public interface OrderService {
 	
 	Order saveOrderList(UUID uuid,Long[] productIds);
 

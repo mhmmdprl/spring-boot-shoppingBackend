@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.muhammedpiral.piral.entity.account.Order;
-import com.muhammedpiral.piral.service.OrderListService;
+import com.muhammedpiral.piral.service.OrderService;
 
 @RestController
 @RequestMapping("/order")
@@ -19,7 +19,7 @@ public class OrderListRestController {
 	
 	
 	@Autowired
-	private OrderListService orderListService;
+	private OrderService orderListService;
 
 	@PostMapping("/{uuid}")
 	public ResponseEntity<Order> addToBasket(@PathVariable UUID uuid, @RequestParam(value = "id") Long[] id) {

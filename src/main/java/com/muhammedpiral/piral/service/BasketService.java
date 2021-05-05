@@ -8,7 +8,7 @@ import com.muhammedpiral.piral.entity.account.Basket;
 
 
 @Service
-public interface BasketListService {
+public interface BasketService {
 
 	
 	Basket saveBasketList(UUID uuid,Long[] productIds);

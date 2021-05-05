@@ -6,6 +6,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.muhammedpiral.piral.entity.account.Order;
 import com.muhammedpiral.piral.entity.account.Users;
@@ -13,9 +14,9 @@ import com.muhammedpiral.piral.entity.product.Product;
 import com.muhammedpiral.piral.repository.OrderRepository;
 import com.muhammedpiral.piral.repository.ProductRepository;
 import com.muhammedpiral.piral.repository.UserRepository;
-import com.muhammedpiral.piral.service.OrderListService;
-
-public class OrderListServiceImpl implements OrderListService {
+import com.muhammedpiral.piral.service.OrderService;
+@Service
+public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	private UserRepository userRepository;

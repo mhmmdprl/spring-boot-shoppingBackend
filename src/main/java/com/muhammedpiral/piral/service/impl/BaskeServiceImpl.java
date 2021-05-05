@@ -14,10 +14,10 @@ import com.muhammedpiral.piral.entity.product.Product;
 import com.muhammedpiral.piral.repository.BasketRepository;
 import com.muhammedpiral.piral.repository.ProductRepository;
 import com.muhammedpiral.piral.repository.UserRepository;
-import com.muhammedpiral.piral.service.BasketListService;
+import com.muhammedpiral.piral.service.BasketService;
 
 @Service
-public class BasketListServiceImpl implements BasketListService {
+public class BaskeServiceImpl implements BasketService {
 
 	@Autowired
 	private BasketRepository basketListRep;

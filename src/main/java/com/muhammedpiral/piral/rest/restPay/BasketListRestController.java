@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.muhammedpiral.piral.entity.account.Basket;
-import com.muhammedpiral.piral.service.BasketListService;
+import com.muhammedpiral.piral.service.BasketService;
 
 @RestController
 @RequestMapping("/basket")
 public class BasketListRestController {
 
 	@Autowired
-	private BasketListService basketListService;
+	private BasketService basketListService;
 
 	@PostMapping("/{uuid}")
 	public ResponseEntity<Basket> addToBasket(@PathVariable UUID uuid, @RequestParam(value = "id") Long[] id) {
